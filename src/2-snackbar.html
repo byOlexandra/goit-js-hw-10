@@ -13,9 +13,8 @@
         <form class="form">
           <label>
             Delay (ms)
-            <input type="number" name="delay" required />
-          </label>
-        
+            <input type="number" name="delay" step="1000" required />
+          </label>        
           <fieldset>
             <legend>State</legend>
             <label>
@@ -26,14 +25,11 @@
               <input type="radio" name="state" value="rejected" required />
               Rejected
             </label>
-          </fieldset>
-        
+          </fieldset>        
           <button type="submit">Create notification</button>
-        </form>
-        
+        </form>        
       </div>
     </main>
-    <load src="./partials/back-link.html" />
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
